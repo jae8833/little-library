@@ -1,0 +1,214 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* header */
+
+.header {
+    background-color: #fffbfb;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 3px 3px lightgray;
+    margin-bottom: 3px;
+    gap: 10px;
+}
+
+#logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#log-in {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: gainsboro;
+    min-width: 100px;
+}
+
+#log-in:hover {
+    cursor: pointer;
+}
+
+/* content */
+
+.content {
+    background-color: #f0eef1;
+}
+
+.new-book {
+    padding: 20px;
+    text-align: center;
+}
+
+#add-book {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #f0eef1;
+    border: none;
+}
+
+#add-book:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.card-container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    grid-auto-rows: 280px;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+    justify-content: stretch;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card button {
+    height: 40px;
+}
+
+.remove {
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+.remove:hover {
+    background-color: rgb(176, 199, 199);
+}
+
+.book-read, .remove {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+}
+
+.Read {
+    background-color: greenyellow;
+}
+
+.Read:hover {
+    background-color: rgb(146, 225, 107);
+}
+
+.Not-Read {
+    background-color: rgb(239, 69, 69);
+}
+
+.Not-Read:hover {
+    background-color: rgb(187, 4, 4);
+}
+
+/* form */
+
+.form-container {
+    background-color: #f0eef1;
+    padding: 30px;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    z-index: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    padding: 5px 10px;
+    width: 90%;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.read-container {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.read-container label {
+    font-size: 1.2rem;    
+}
+
+.read-container input {
+    margin: 0;
+    width: 20px;
+}
+
+#submit {
+    padding: 10px 20px;
+    width: 85%;
+    background-color: lightgreen;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+.inactive {
+    display: none;
+}
+
+/* background */
+
+.background {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100%; 
+    width: 100%;
+    z-index: 1;
+}
+

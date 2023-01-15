@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <p id="logo">library</p>
+        <button type="submit" id="log-in">Log in</button>
+    </div>
+    <div class="content">
+        <div class="new-book">
+            <button type="button" id="add-book">+ Add Book</button>
+        </div>
+        <div class="card-container">
+
+        </div>
+    </div>
+    <div class="form-container inactive">
+        <form action="https://httpbin.org/post" method="post">
+            <h3>Add new book</h3>
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="text" id="pages" placeholder="Pages" required>
+            <div class="read-container">
+                <label for="read">Have you read it?</label>
+                <input id="read" type="checkbox">
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <div class="background inactive"></div>
+</body>
+</html>
